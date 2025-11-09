@@ -8,21 +8,66 @@
 
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-        </ul>
-    </nav>
+
+    <div id="header"></div>
+    <script>
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+    </script>
+
+
     <main>
-        <h2>About Me</h2>
-        <p>Hi, I'm Pragathi Durga Rajarajan. I'm a computer science student at the University of Texas at San Antonio. </p>
-    </main>
-    <footer>
-        <p>&copy; 2024 Pragathi Durga Rajarajan. All rights reserved.</p>
-    </footer>
+        <section class="about">
+            <div class="about-left">
+                <img class="headshot" src="assets/images/durga_10242025_croppedSquare.jpg" alt="Pragathi Durga Rajarajan headshot">
+
+                <div class="about-icons">
+                    <a href="https://www.linkedin.com/in/pragathi-durga-rajarajan/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/pdr24" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=I36lgfEAAAAJ&hl=en" target="_blank">
+                        <i class="ai ai-google-scholar"></i>
+                    </a>
+                    <a href="mailto:pragathidurga.rajarajan@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="about-right">
+            <h2>About Me</h2>
+            <p class="about-text">
+                I’m an undergraduate Honors student at the University of Texas at San Antonio, majoring in <span class="highlight">Computer Science</span> with concentrations in <span class="highlight">Data Science</span> and <span class="highlight">Software Engineering</span> and a minor in <span class="highlight">Mathematics</span>.
+                My academic and research interests center on computer vision, distributed deep learning, and developing software tools for K-12 AI education.
+                <br><br>
+                I have contributed to research in multiple research labs at the University of Texas at San Antonio: Dr. Amanda Fernandez’s <span class="highlight">Vision and AI Lab</span>, Dr. Palden Lama’s <span class="highlight">Cloud Systems (CloudSys Lab)</span>, Dr. Fred Martin’s <span class="highlight">Engaging Computing Group</span>, and Dr. Rajendra Boppana’s <span class="highlight">Systems and Networks (SyN) Lab</span>. 
+                I have worked on research projects involving <span class="highlight">multimodal defect detection</span> for nuclear materials applications, <span class="highlight">distributed deep learning</span> for resource-constrained edge devices, software tools for supporting <span class="highlight">K-12 AI literacy</span>, and machine learning driven malware detection. 
+                My work has led to peer-reviewed publications, poster presentations, and competitive undergraduate research awards.
+                <br><br>
+                My long-term goal is to develop <span class="highlight">efficient, explainable, and accessible AI systems</span>. 
+                I intend to pursue a Ph.D. in Computer Science to expand my research in explainable deep learning and machine learning, as well as their real-world applications.
+            </p>
+            </div>
+        </section>
+        </main>
+
+
+    
+    <div id="footer"></div>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+
+
 </body>
 </html>
