@@ -1,22 +1,50 @@
+:root{
+  --bg: #f7f8fb;
+  --text: #1c2430;
+  --muted: #5b6676;
+  --divider: #0A2647;
+  --card: #ffffff;
+  --chip: #eef3ff;
+  --chip-text:#2C74B3;
+  --accent: #2C74B3;
+  --maxw: 1100px;
+  --gap: 2rem;
+}
+
+*{box-sizing:border-box;}
+
+
 
 /* Global resets */
 body {
     margin: 0;
+    margin-top: 6rem;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(252, 252, 255);
+
 }
 
 /* Header container */
 .site-header {
-    display: flex;
-    justify-content: space-between;    /* space between name and links */
-    align-items: center;               /* vertical centering */
+
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
     background-color: #0A2647;
     color: white;
-    padding: 0 6vh;                    /* horizontal spacing */
-    height: 8vh;                       /* fixed clean header height */
+    padding: 0 3rem;                    /* horizontal spacing */
+    height: 3.5rem;                       /* fixed clean header height */
     font-family: 'Inter', sans-serif;
     font-size: 2vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Left side — Name */
@@ -29,18 +57,20 @@ body {
 .header-right a {
     color: white;
     text-decoration: none;
-    margin-left: 2vw;                  /* spacing between links */
-    padding: 0.4rem 0;                 /* vertically centers text nicely */
+    margin-left: 1vw;                  /* spacing between links */
+    padding: 0.7rem 0.5rem;                 /* vertically centers text nicely */
+    border-radius: 0.25rem;
 }
 
 .header-right a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    background-color: #2C74B3;
 }
 
 main {
-    padding: 2vh;
-    margin: 6vh;
-    background: #fff;
+    padding: 3rem;
+    margin: 3rem;
+    background-color: rgb(252, 252, 255);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
@@ -55,14 +85,14 @@ main {
     justify-content: space-between;
     align-items: center;
     font-family: 'Inter', sans-serif;
-    font-size: 1.5vh;
+    font-size: 0.75rem;
     height: 1vh;    
 }
 
 .footer-icons a {
     color: #fff;
     margin-left: 1rem;
-    font-size: 3vh;
+    font-size: 1.25rem;
     text-decoration: none !important;   
 }
 
@@ -87,44 +117,23 @@ main {
 .about {
   display: grid;
   grid-template-columns: 320px 1fr; /* left column fixed-ish, right grows */
-  gap: 2rem;
+  gap: 5rem;
   align-items: start;  /* keeps top-aligned */
-  max-width: 1100px;
+  max-width: 90%;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
 /* Left column */
 .headshot {
-    width: 80%;              /* or 100% if you prefer */
-    height: 80%;             /* must match width */
+    width: 90%;              /* or 100% if you prefer */
+    height: 90%;             /* must match width */
     border-radius: 50%;        /* makes it a circle */
     object-fit: cover;         /* crops image cleanly */
     object-position: center;   /* centers your face */
     display: block;
     margin: 0 auto 1rem auto;  /* centers in the left column */
     box-shadow: 0 4px 18px rgba(0,0,0,0.08);
-}
-
-.socials {
-  list-style: none;
-  padding: 0;
-  margin: 0.5rem 0 0;
-  display: grid;
-  gap: 0.5rem;
-}
-
-.socials a {
-  text-decoration: none;         /* prevents underlines/odd _ artifacts */
-  border: 1px solid #ddd;
-  padding: 0.5rem 0.75rem;
-  border-radius: 8px;
-  display: inline-block;
-  color: #333;
-}
-
-.socials a:hover {
-  background: #f5f5f5;
 }
 
 .about-left {
@@ -144,7 +153,7 @@ main {
 .about-icons a {
     color: #144272;
     margin: 0 0.5rem;
-    font-size: 1.6rem;
+    font-size: 1.75rem;
     text-decoration: none !important;
 }
 
@@ -172,6 +181,168 @@ main {
     grid-template-columns: 1fr;
   }
 }
+
+
+.research-page{
+  margin: 3rem;
+  padding: 6em;
+}
+
+.research-title{
+  font-size:clamp(1.6rem,1.2rem + 1.5vw,2.25rem);
+  margin:0 0 1.25rem 0;
+}
+
+.research-lead{
+  margin:0 0 2.25rem 0;
+  color:var(--muted);
+  
+}
+
+/* ========= LAB SECTION GRID ========= */
+
+.research-lab-section{
+  position:relative;
+
+  display:grid;
+  grid-template-columns:1fr 2fr;
+  gap:var(--gap);
+  padding:2rem 0;
+  margin-left: 4em;
+  margin-right: 4em;
+}
+
+.research-lab-section + .research-lab-section{
+  border-top:0px solid rgba(10,38,71,0.12);
+}
+
+/* vertical divider */
+.research-lab-section::before{
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:calc(33.333% - (var(--gap) / 2));
+  width:2px;
+  background:var(--divider);
+  opacity:0.85;
+}
+
+/* left column */
+.research-lab-left{
+  padding-right:calc(1.5 * var(--gap));
+  text-align: left;
+}
+
+.research-lab-name{
+  margin:0 0 .3rem 0;
+  font-size:1.15rem;
+  font-weight:700;
+}
+
+.research-lab-pi{
+  margin:0 0 .75rem 0;
+  color:var(--muted);
+  font-weight:500;
+}
+
+.research-lab-meta{
+  margin:.75rem 0 0 0;
+  color:var(--muted);
+  font-size:0.95rem;
+}
+
+/* right column */
+.research-lab-right{
+  padding-left:calc(var(--gap) / 2);
+}
+
+/* ========= PROJECT CARDS ========= */
+
+.research-projects{
+  display:grid;
+  gap:1rem;
+}
+
+.research-project-card{
+  background:var(--card);
+  border-radius:12px;
+  padding:1rem 1.1rem;
+  box-shadow:0 6px 14px rgba(10,38,71,0.06);
+  transition:transform .12s ease,box-shadow .12s ease;
+}
+
+.research-project-card:hover{
+  transform:translateY(-1px);
+  box-shadow:0 10px 20px rgba(10,38,71,0.10);
+}
+
+.research-project-title{
+  margin:0 0 .25rem 0;
+  font-weight:600;
+  font-size:1.05rem;
+}
+
+.research-project-venue{
+  margin:0 0 .5rem 0;
+  color:var(--muted);
+  font-size:.95rem;
+}
+
+.research-project-desc{
+  margin:.4rem 0 .75rem 0;
+}
+
+.research-chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.4rem;
+}
+
+.research-chip{
+  background:var(--chip);
+  color:var(--chip-text);
+  font-size:.82rem;
+  padding:.25rem .55rem;
+  border-radius:999px;
+  font-weight:600;
+}
+
+/* ========= LINKS ========= */
+
+a{
+  color:var(--accent);
+  text-decoration:none;
+}
+a:hover{text-decoration:underline;}
+
+/* ========= RESPONSIVE ========= */
+
+@media (max-width:900px){
+  .research-lab-section{
+    grid-template-columns:1fr;
+    padding:1.25rem 0 1.75rem;
+  }
+
+  .research-lab-section::before{
+    display:none;
+  }
+
+  .research-lab-right{
+    border-top:2px solid var(--divider);
+    padding-top:1rem;
+    margin-top:1rem;
+  }
+}
+
+@media (prefers-reduced-motion:reduce){
+  .research-project-card{transition:none;}
+}
+
+
+
+
+
 
 
 .project-grid {
