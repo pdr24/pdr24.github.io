@@ -1,37 +1,1040 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Publications</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-</head>
-<body>
-
+  <body>
     <div id="header"></div>
     <script>
-        fetch("header.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("header").innerHTML = data;
-            });
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
     </script>
 
+    <main class="publications-page">
+      <section class="publications-wrap">
+        <h1 class="publications-title">Publications</h1>
+        <p class="publications-subtitle">
+          Peer reviewed research papers and poster presentations.
+        </p>
 
-    <main>
-        <h2>Under development</h2>
+        <h2 class="">Conference Proceedings (Peer Reviewed)</h2>
+
+        <h3 class="">Accepted</h3>
+
+        <article class="publications-card">
+          <!-- LEFT: Thumbnail (optional) -->
+          <div class="publications-thumb">
+            <!-- If you don't want an image, remove this <img> element -->
+            <!-- <img src="assets/images/placeholder.jpg" alt="Image Recognition paper thumbnail"> -->
+          </div>
+
+          <!-- RIGHT: Content -->
+          <div class="publications-content">
+            <header class="publications-card-head">
+              <h2 class="publications-paper-title">
+                On Teaching Image Recognition to Children at a Summer Camp
+              </h2>
+              <div class="publications-venue">
+                Proceedings of the 57th ACM Technical Symposium on Computer
+                Science Education (SIGCSE TS) • 2026 (To Appear)
+              </div>
+            </header>
+
+            <div class="publications-authors">
+              <span style="color:#2C74B3; font-weight:bold;">Pragathi Durga Rajarajan</span> and Fred Martin
+            </div>
+
+            <!-- Chips -->
+            <div class="publications-chips">
+              <span class="publications-chip publications-chip--topic"
+                >K-12 AI Literacy</span
+              >
+
+              <!-- Example lab chip -->
+              <span
+                class="publications-chip publications-chip--lab publications-lab--ecg"
+              >
+                Engaging Computing Group
+              </span>
+            </div>
+
+            <div class="publications-links">
+              <!--
+            <a class="publications-link" href="#" target="_blank">
+                <i class="fa-solid fa-link"></i>
+                Paper
+            </a>
+            -->
+
+              <!--
+            <a class="publications-link" href="#" target="_blank">
+                <i class="fa-regular fa-file-pdf"></i>
+                PDF
+            </a>
+            -->
+
+              <a
+                class="publications-link"
+                href="https://github.com/pdr24/ImageRecognitionEd-SIGCSE2026"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i>
+                Module Materials and Code
+              </a>
+
+              <!--
+            <a class="publications-link" href="#" target="_blank">
+                <i class="fa-regular fa-circle-play"></i>
+                Video
+            </a>
+            -->
+            </div>
+          </div>
+        </article>
+
+        <!-- C02 -->
+        <article class="publications-card">
+          <!-- Optional thumbnail -->
+          <div class="publications-thumb">
+            <!-- <img src="assets/images/c02.jpg" alt="AI for Everyone thumbnail"> -->
+          </div>
+
+          <div class="publications-content">
+            <header class="publications-card-head">
+              <h2 class="publications-paper-title">
+                AI for Everyone: Engaging Middle Schoolers through Collaborative,
+                Ethical, and Multimodal AI Learning
+              </h2>
+              <div class="publications-venue">
+                Proceedings of the 57th ACM Technical Symposium on Computer
+                Science Education (SIGCSE TS) • 2026 (To Appear)
+              </div>
+            </header>
+
+            <div class="publications-authors">
+              Kayleigh Stallings, Nicole Tian, Elif Yayla Ercek, Haven Kotara,
+              Devin Marinelli, <span style="color:#2C74B3; font-weight:bold;">Pragathi Durga Rajarajan</span>, Daniel Schumacher,
+              Ismaila Sanusi, and Fred Martin
+            </div>
+
+            <div class="publications-chips">
+              <span class="publications-chip publications-chip--topic"
+                >K-12 AI Literacy</span
+              >
+
+              <span
+                class="publications-chip publications-chip--lab publications-lab--ecg"
+              >
+                Engaging Computing Group
+              </span>
+            </div>
+
+            <div class="publications-links">
+              <!--
+    <a class="publications-link" href="#" target="_blank">
+        <i class="fa-solid fa-link"></i>
+        Paper
+    </a>
+    -->
+
+              <!--
+    <a class="publications-link" href="#" target="_blank">
+        <i class="fa-regular fa-file-pdf"></i>
+        PDF
+    </a>
+    -->
+
+              <!--
+    <a class="publications-link" href="#" target="_blank">
+        <i class="fa-brands fa-github"></i>
+        Code
+    </a>
+    -->
+
+              <!--
+    <a class="publications-link" href="#" target="_blank">
+        <i class="fa-regular fa-circle-play"></i>
+        Video
+    </a>
+    -->
+            </div>
+          </div>
+        </article>
+
+        <!-- C03 -->
+        <article class="publications-card">
+          <div class="publications-thumb">
+            <!-- <img src="assets/images/c03.jpg" alt="EdgeCom 2025 thumbnail"> -->
+          </div>
+
+          <div class="publications-content">
+            <header class="publications-card-head">
+              <h2 class="publications-paper-title">
+                Where to Split? A Pareto-Front Analysis of DNN Partitioning for
+                Edge Inference
+              </h2>
+              <div class="publications-venue">
+                11th IEEE International Conference on Edge Computing and
+                Scalable Cloud (IEEE EdgeCom) • 2025 (To Appear)
+              </div>
+            </header>
+
+            <div class="publications-authors">
+              Adiba Masud, Nicholas Foley, <span style="color:#2C74B3; font-weight:bold;">Pragathi Durga Rajarajan</span>, and Palden
+              Lama
+            </div>
+
+            <div class="publications-chips">
+              <span class="publications-chip publications-chip--topic"
+                >Edge AI</span
+              >
+              <span class="publications-chip publications-chip--topic"
+                >Distributed Deep Learning</span
+              >
+
+              <span
+                class="publications-chip publications-chip--lab publications-lab--cloudsys"
+              >
+                CloudSys Lab
+              </span>
+            </div>
+
+            <div class="publications-links">
+              <!--
+    <a class="publications-link" href="#" target="_blank">
+        <i class="fa-solid fa-link"></i>
+        Paper
+    </a>
+    -->
+
+              <!--
+    <a class="publications-link" href="#" target="_blank">
+        <i class="fa-regular fa-file-pdf"></i>
+        PDF
+    </a>
+    -->
+
+              <a
+                class="publications-link"
+                href="https://github.com/cloudsyslab/ParetoPipe"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i>
+                Code
+              </a>
+
+              <!--
+    <a class="publications-link" href="#" target="_blank">
+        <i class="fa-regular fa-circle-play"></i>
+        Video
+    </a>
+    -->
+            </div>
+          </div>
+        </article>
+
+        <!-- C04 -->
+        <article class="publications-card">
+          <div class="publications-thumb">
+            <!-- <img src="assets/images/c04.jpg" alt="IntoTheRabbitHole thumbnail"> -->
+          </div>
+
+          <div class="publications-content">
+            <header class="publications-card-head">
+              <h2 class="publications-paper-title">
+                IntoTheRabbitHole: A Web Application for Teaching Middle School
+                Students About Search Algorithms
+              </h2>
+              <div class="publications-venue">
+                In Proceedings of the 30th ACM Conference on Innovation and
+                Technology in Computer Science Education (ACM ITiCSE) • 2025 •
+                Best Paper Nominee
+              </div>
+            </header>
+
+            <div class="publications-authors">
+              <span style="color:#2C74B3; font-weight:bold;">Pragathi Durga Rajarajan</span> and Fred Martin
+            </div>
+
+            <div class="publications-chips">
+              <span class="publications-chip publications-chip--topic"
+                >K-12 CS Education</span
+              >
+
+              <span
+                class="publications-chip publications-chip--lab publications-lab--ecg"
+              >
+                Engaging Computing Group
+              </span>
+            </div>
+
+            <div class="publications-links">
+              <a
+                class="publications-link"
+                href="https://doi.org/10.1145/3724363.3729080"
+                target="_blank"
+              >
+                <i class="fa-solid fa-link"></i>
+                Paper
+              </a>
+
+              <!--
+    <a class="publications-link" href="#" target="_blank">
+        <i class="fa-regular fa-file-pdf"></i>
+        PDF
+    </a>
+    -->
+
+              <!--
+    <a class="publications-link" href="#" target="_blank">
+        <i class="fa-brands fa-github"></i>
+        Code
+    </a>
+    -->
+
+              <!--
+    <a class="publications-link" href="#" target="_blank">
+        <i class="fa-regular fa-circle-play"></i>
+        Video
+    </a>
+    -->
+            </div>
+          </div>
+        </article>
+
+        <!-- C05 -->
+        <article class="publications-card">
+          <div class="publications-thumb">
+            <!-- <img src="assets/images/c05.jpg" alt="FaunaForest thumbnail"> -->
+          </div>
+
+          <div class="publications-content">
+            <header class="publications-card-head">
+              <h2 class="publications-paper-title">
+                FaunaForest: A Novel Software Tool for Teaching Decision Trees
+                to Middle School Students
+              </h2>
+              <div class="publications-venue">
+                IEEE Integrated STEM Education Conference (IEEE ISEC) • 2025
+              </div>
+            </header>
+
+            <div class="publications-authors">
+              <span style="color:#2C74B3; font-weight:bold;">Pragathi Durga Rajarajan</span>, Adrian Cisneros, and Fred Martin
+            </div>
+
+            <div class="publications-chips">
+              <span class="publications-chip publications-chip--topic"
+                >K-12 AI Literacy</span
+              >
+
+              <span
+                class="publications-chip publications-chip--lab publications-lab--ecg"
+              >
+                Engaging Computing Group
+              </span>
+            </div>
+
+            <div class="publications-links">
+              <a
+                class="publications-link"
+                href="https://doi.org/10.1109/ISEC64801.2025.11147419"
+                target="_blank"
+              >
+                <i class="fa-solid fa-link"></i>
+                Paper
+              </a>
+
+              <!--
+    <a class="publications-link" href="#" target="_blank">
+        <i class="fa-regular fa-file-pdf"></i>
+        PDF
+    </a>
+    -->
+
+              <!--
+    <a class="publications-link" href="#" target="_blank">
+        <i class="fa-brands fa-github"></i>
+        Code
+    </a>
+    -->
+
+              <!--
+    <a class="publications-link" href="#" target="_blank">
+        <i class="fa-regular fa-circle-play"></i>
+        Video
+    </a>
+    -->
+            </div>
+          </div>
+        </article>
+
+        <!-- C06 -->
+        <article class="publications-card">
+          <div class="publications-thumb">
+            <!-- <img src="assets/images/c06.jpg" alt="TrainYourSnakeAI thumbnail"> -->
+          </div>
+
+          <div class="publications-content">
+            <header class="publications-card-head">
+              <h2 class="publications-paper-title">
+                TrainYourSnakeAI: A Novel Tool to Teach Reinforcement Learning
+                to Middle School Students
+              </h2>
+              <div class="publications-venue">
+                In Proceedings of the 56th ACM Technical Symposium on Computer
+                Science Education (SIGCSE TS) • 2025
+              </div>
+            </header>
+
+            <div class="publications-authors">
+              Cesar Hinojosa, Priyanka Kumar, <span style="color:#2C74B3; font-weight:bold;">Pragathi Durga Rajarajan</span>, and
+              Fred Martin
+            </div>
+
+            <div class="publications-chips">
+              <span class="publications-chip publications-chip--topic"
+                >K-12 AI Literacy</span
+              >
+
+              <span
+                class="publications-chip publications-chip--lab publications-lab--ecg"
+              >
+                Engaging Computing Group
+              </span>
+            </div>
+
+            <div class="publication-links">
+              <a
+                class="publications-link"
+                href="https://doi.org/10.1145/3641554.3701907"
+                target="_blank"
+              >
+                <i class="fa-solid fa-link"></i>
+                Paper
+              </a>
+
+              <!--
+    <a class="publications-link" href="#" target="_blank">
+        <i class="fa-regular fa-file-pdf"></i>
+        PDF
+    </a>
+    -->
+
+              <!--
+    <a class="publications-link" href="#" target="_blank">
+        <i class="fa-brands fa-github"></i>
+        Code
+    </a>
+    -->
+
+              <!--
+    <a class="publications-link" href="#" target="_blank">
+        <i class="fa-regular fa-circle-play"></i>
+        Video
+    </a>
+    -->
+            </div>
+          </div>
+        </article>
+
+        <h3 class="">Under Review</h3>
+        <!-- ===================== CVPR 2026 — Q-MAST ===================== -->
+        <article class="publications-card">
+          <div class="publications-thumb">
+            <!-- <img src="assets/images/qmast.jpg" alt="Q-MAST Materials Analysis"> -->
+          </div>
+
+          <div class="publications-content">
+            <header class="publications-card-head">
+              <h2 class="publications-paper-title">
+                Q-MAST: Query-based Materials Analysis with Semi-supervised
+                Transformer
+              </h2>
+              <div class="publications-venue">
+                Under review at a top vision venue
+              </div>
+            </header>
+
+            <div class="publications-authors">
+              Logan Robinson, Daniel Mohanadhas, Sergio J. Contreras,
+              <span style="color:#2C74B3; font-weight:bold;">Pragathi Durga Rajarajan</span>, Michelle Hope Voges, Cyana Zaragosa,
+              Patrick Henry Warren, Elizabeth S. Sooby, Amanda S. Fernandez
+            </div>
+
+            <div class="publications-chips">
+              <span class="publications-chip publications-chip--topic"
+                >Semantic Segmentation</span
+              >
+              <span class="publications-chip publications-chip--topic"
+                >Multimodal</span
+              >
+              <span class="publications-chip publications-chip--topic"
+                >Few-Shot</span
+              >
+
+              <span
+                class="publications-chip publications-chip--lab publications-lab--vail"
+              >
+                Vision & AI Lab
+              </span>
+            </div>
+
+            <div class="publications-links">
+              <!--
+      <a class="publications-link" href="#" target="_blank">
+        <i class="fa-solid fa-link"></i> Paper
+      </a>
+      -->
+
+              <!--
+      <a class="publications-link" href="#" target="_blank">
+        <i class="fa-regular fa-file-pdf"></i> PDF
+      </a>
+      -->
+
+              <!--
+      <a class="publications-link" href="#" target="_blank">
+        <i class="fa-brands fa-github"></i> Code
+      </a>
+      -->
+
+              <!--
+      <a class="publications-link" href="#" target="_blank">
+        <i class="fa-regular fa-circle-play"></i> Video
+      </a>
+      -->
+            </div>
+          </div>
+        </article>
+
+        <h2 class="">Non-Archival Workshop Papers (Peer Reviewed)</h2>
+
+        <!-- CVPR MM4Mat 2025 -->
+        <article class="publications-card">
+          <!-- Optional thumbnail -->
+          <div class="publications-thumb">
+            <!-- <img src="assets/images/cvpr-mm4mat.jpg" alt="Defect Detection Benchmark thumbnail"> -->
+          </div>
+
+          <!-- Right content -->
+          <div class="publications-content">
+            <header class="publications-card-head">
+              <h2 class="publications-paper-title">
+                Evaluation and a New Benchmark for Defect Detection in
+                Materials Fabrication
+              </h2>
+              <div class="publications-venue">
+                IEEE/CVF Conference on Computer Vision and Pattern Recognition
+                (CVPR) Workshop on Multimodal Models for Materials (MM4Mat) •
+                2025
+              </div>
+            </header>
+
+            <div class="publications-authors">
+              Logan Robinson, Pedro Davila, Sergio Contreras, Pragathi Durga
+              Rajarajan, Daniel Castillo, Michelle Voges, Cyana Zaragosa,
+              Patrick Warren, Elizabeth S. Sooby, Amanda S. Fernandez
+            </div>
+
+            <!-- Chips -->
+            <div class="publications-chips">
+              <span class="publications-chip publications-chip--topic"
+                >Semantic Segmentation</span
+              >
+              <span class="publications-chip publications-chip--topic"
+                >Multimodal</span
+              >
+
+              <!-- Lab affiliation -->
+              <span
+                class="publications-chip publications-chip--lab publications-lab--vail"
+              >
+                Vision & AI Lab
+              </span>
+            </div>
+
+            <!-- Links -->
+            <div class="publications-links">
+              <!-- Replace # with actual links when available -->
+              <a class="publications-link" href="#" target="_blank">
+                <!-- Replace # with actual links when available -->
+              </a>
+
+              <a class="publications-link" href="#" target="_blank">
+                <!-- Replace # with actual links when available -->
+              </a>
+
+              <!-- Optional GitHub repo -->
+              <!-- <a class="publications-link" href="#" target="_blank">
+        <i class="fa-brands fa-github"></i> Code
+      </a> -->
+
+              <!-- Optional video -->
+              <!-- <a class="publications-link" href="#" target="_blank">
+        <i class="fa-regular fa-circle-play"></i> Video
+      </a> -->
+            </div>
+          </div>
+        </article>
+
+        <h2 class="">Poster Presentations</h2>
+
+        <!-- ===================== P01 ===================== -->
+        <article class="publications-card">
+          <div class="publications-thumb">
+            <!-- <img src="assets/images/p01.jpg" alt="Multimodal Few-Shot Image Segmentation"> -->
+          </div>
+
+          <div class="publications-content">
+            <header class="publications-card-head">
+              <h2 class="publications-paper-title">
+                Multimodal Few-Shot Image Segmentation for Defect Detection
+              </h2>
+              <div class="publications-venue">
+                UTSA College of AI, Cyber, and Computing — H-E-B Community
+                Innovation Scholars Showcase (2025)
+              </div>
+            </header>
+
+            <div class="publications-authors">
+              <span style="color:#2C74B3; font-weight:bold;">Pragathi Durga Rajarajan</span> and Amanda Fernandez
+            </div>
+
+            <div class="publications-chips">
+              <span class="publications-chip publications-chip--topic"
+                >Semantic Segmentation</span
+              >
+              <span class="publications-chip publications-chip--topic"
+                >Multimodal</span
+              >
+              <span
+                class="publications-chip publications-chip--lab publications-lab--vail"
+                >Vision & AI Lab</span
+              >
+            </div>
+
+            <div class="publications-links">
+              <!-- <a class="publications-link" href="#" target="_blank"><i class="fa-solid fa-link"></i> Paper</a> -->
+            </div>
+          </div>
+        </article>
+
+        <!-- ===================== P02 ===================== -->
+        <article class="publications-card">
+          <div class="publications-thumb">
+            <!-- <img src="assets/images/p02.jpg" alt="Pareto-Front DNN Partitioning"> -->
+          </div>
+
+          <div class="publications-content">
+            <header class="publications-card-head">
+              <h2 class="publications-paper-title">
+                Where to Split? A Pareto-Front Analysis of DNN Partitioning for
+                Edge Environments
+              </h2>
+              <div class="publications-venue">
+                UTSA College of AI, Cyber, and Computing — H-E-B Community
+                Innovation Scholars Showcase (2025)
+              </div>
+            </header>
+
+            <div class="publications-authors">
+              Nicholas Michael Foley, Adiba Masud, <span style="color:#2C74B3; font-weight:bold;">Pragathi Durga Rajarajan</span>,
+              and Palden Lama
+            </div>
+
+            <div class="publications-chips">
+              <span class="publications-chip publications-chip--topic"
+                >Distributed Deep Learning</span
+              >
+              <span class="publications-chip publications-chip--topic"
+                >Edge AI</span
+              >
+              <span
+                class="publications-chip publications-chip--lab publications-lab--cloudsys"
+                >CloudSys Lab</span
+              >
+            </div>
+
+            <div class="publications-links">
+              <!-- <a class="publications-link" href="#" target="_blank"><i class="fa-solid fa-link"></i> Paper</a> -->
+            </div>
+          </div>
+        </article>
+
+        <!-- ===================== P03 ===================== -->
+        <article class="publications-card">
+          <div class="publications-thumb">
+            <!-- <img src="assets/images/p03.jpg" alt="IoT Attack Detection Poster"> -->
+          </div>
+
+          <div class="publications-content">
+            <header class="publications-card-head">
+              <h2 class="publications-paper-title">
+                Fast Attack Detection in Internet of Things (IoT) Devices
+                Utilizing Machine Learning and Network Traffic Data
+              </h2>
+              <div class="publications-venue">
+                RSA Security Scholar Poster Exhibition — RSA Conference (2025)
+              </div>
+            </header>
+
+            <div class="publications-authors">
+              <span style="color:#2C74B3; font-weight:bold;">Pragathi Durga Rajarajan</span>
+            </div>
+
+            <div class="publications-chips">
+              <span class="publications-chip publications-chip--topic"
+                >Malware Detection</span
+              >
+              <span class="publications-chip publications-chip--topic"
+                >IoT Security</span
+              >
+              <span
+                class="publications-chip publications-chip--lab publications-lab--syn"
+                >SyN Lab</span
+              >
+            </div>
+
+            <div class="publications-links">
+              <a
+                class="publications-link"
+                href="https://www.rsaconference.com/-/media/project/rsac/rsac-website/page-files/2025-security-scholar-poster/security-scholar-poster---pragathi-durga-rajarajan---university-of-texas-at-san-antonio_final.pdf?rev=219d58c51dda47f5861ab1bd6f2d101f&hash=CABB30FBF99F533AE51D78F21BE9E549"
+                target="_blank"
+              >
+                <i class="fa-solid fa-link"></i> Poster Link
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===================== P04 ===================== -->
+        <article class="publications-card">
+          <div class="publications-thumb">
+            <!-- <img src="assets/images/p04.jpg" alt="Distributed DNN Inference Benchmark"> -->
+          </div>
+
+          <div class="publications-content">
+            <header class="publications-card-head">
+              <h2 class="publications-paper-title">
+                Benchmarking Distributed DNN Inference in an Edge Environment
+              </h2>
+              <div class="publications-venue">
+                UTSA Office of Undergraduate Research — Spring Showcase (2025)
+              </div>
+            </header>
+
+            <div class="publications-authors">
+              Nicholas Michael Foley, <span style="color:#2C74B3; font-weight:bold;">Pragathi Durga Rajarajan</span>, Adiba Masud,
+              and Palden Lama
+            </div>
+
+            <div class="publications-chips">
+              <span class="publications-chip publications-chip--topic"
+                >Distributed Deep Learning</span
+              >
+              <span class="publications-chip publications-chip--topic"
+                >Edge AI</span
+              >
+              <span
+                class="publications-chip publications-chip--lab publications-lab--cloudsys"
+                >CloudSys Lab</span
+              >
+            </div>
+
+            <div class="publications-links">
+              <!-- <a class="publications-link" href="#" target="_blank"><i class="fa-solid fa-link"></i> Poster</a> -->
+            </div>
+          </div>
+        </article>
+
+        <!-- ===================== P05 ===================== -->
+        <article class="publications-card">
+          <div class="publications-thumb">
+            <!-- <img src="assets/images/p05.jpg" alt="FaunaForest prototype poster"> -->
+          </div>
+
+          <div class="publications-content">
+            <header class="publications-card-head">
+              <h2 class="publications-paper-title">
+                FaunaForest: From Prototype to Paper
+              </h2>
+              <div class="publications-venue">
+                UTSA Honors College Experiential Learning Fair — Spring 2025 •
+                1st Place (Research Track)
+              </div>
+            </header>
+
+            <div class="publications-authors">
+              <span style="color:#2C74B3; font-weight:bold;">Pragathi Durga Rajarajan</span>
+            </div>
+
+            <div class="publications-chips">
+              <span class="publications-chip publications-chip--topic"
+                >K-12 AI Literacy</span
+              >
+              <span
+                class="publications-chip publications-chip--lab publications-lab--ecg"
+                >Engaging Computing Group</span
+              >
+            </div>
+
+            <div class="publications-links">
+              <!-- <a class="publications-link" href="#" target="_blank"></a> -->
+            </div>
+          </div>
+        </article>
+
+        <!-- ===================== P06 ===================== -->
+        <article class="publications-card">
+          <div class="publications-thumb">
+            <!-- <img src="assets/images/p06.jpg" alt="Designing Effective Software Tools"> -->
+          </div>
+
+          <div class="publications-content">
+            <header class="publications-card-head">
+              <h2 class="publications-paper-title">
+                Designing Effective Software Tools for Enhancing K-12 AI
+                Education
+              </h2>
+              <div class="publications-venue">
+                2nd Annual San Antonio Honors Research Symposium (2025) • 1st
+                Place Winner
+              </div>
+            </header>
+
+            <div class="publications-authors">
+              <span style="color:#2C74B3; font-weight:bold;">Pragathi Durga Rajarajan</span> and Fred Martin
+            </div>
+
+            <div class="publications-chips">
+              <span class="publications-chip publications-chip--topic"
+                >K-12 AI Literacy</span
+              >
+              <span class="publications-chip publications-chip--topic"
+                >Software Tools</span
+              >
+              <span
+                class="publications-chip publications-chip--lab publications-lab--ecg"
+                >Engaging Computing Group</span
+              >
+            </div>
+
+            <div class="publications-links">
+              <!-- <a class="publications-link" href="#" target="_blank"></a> -->
+            </div>
+          </div>
+        </article>
+
+        <!-- ===================== P07 ===================== -->
+        <article class="publications-card">
+          <div class="publications-thumb">
+            <!-- <img src="assets/images/p07.jpg" alt="Los Datos FaunaForest poster"> -->
+          </div>
+
+          <div class="publications-content">
+            <header class="publications-card-head">
+              <h2 class="publications-paper-title">
+                FaunaForest: A Tool to Teach Decision Trees to Middle School
+                Students
+              </h2>
+              <div class="publications-venue">
+                UTSA School of Data Science — Los Datos 2024 • 2nd Place Winner
+              </div>
+            </header>
+
+            <div class="publications-authors">
+              <span style="color:#2C74B3; font-weight:bold;">Pragathi Durga Rajarajan</span>, Adrian Cisneros, and Fred Martin
+            </div>
+
+            <div class="publications-chips">
+              <span class="publications-chip publications-chip--topic"
+                >K-12 AI Literacy</span
+              >
+              <span
+                class="publications-chip publications-chip--lab publications-lab--ecg"
+                >Engaging Computing Group</span
+              >
+            </div>
+
+            <div class="publications-links">
+              <!-- <a class="publications-link" href="#" target="_blank"></a> -->
+            </div>
+          </div>
+        </article>
+
+        <!-- ===================== P08 ===================== -->
+        <article class="publications-card">
+          <div class="publications-thumb">
+            <!-- <img src="assets/images/p08.jpg" alt="OUR Summer Showcase FaunaForest poster"> -->
+          </div>
+
+          <div class="publications-content">
+            <header class="publications-card-head">
+              <h2 class="publications-paper-title">
+                FaunaForest: A Tool to Teach Decision Trees to Middle School
+                Students
+              </h2>
+              <div class="publications-venue">
+                UTSA Office of Undergraduate Research — Summer Showcase (2024)
+                
+              </div>
+            </header>
+
+            <div class="publications-authors">
+              <span style="color:#2C74B3; font-weight:bold;">Pragathi Durga Rajarajan</span>, Adrian Cisneros, and Fred Martin
+            </div>
+
+            <div class="publications-chips">
+              <span class="publications-chip publications-chip--topic"
+                >K-12 AI Literacy</span
+              >
+              <span
+                class="publications-chip publications-chip--lab publications-lab--ecg"
+                >Engaging Computing Group</span
+              >
+            </div>
+
+            <div class="publications-links">
+              <!-- <a class="publications-link" href="#" target="_blank"></a> -->
+            </div>
+          </div>
+        </article>
+
+        <!-- ===================== P09 ===================== -->
+        <article class="publications-card">
+          <div class="publications-thumb">
+            <!-- <img src="assets/images/p09.jpg" alt="Drug Discovery Explainability poster"> -->
+          </div>
+
+          <div class="publications-content">
+            <header class="publications-card-head">
+              <h2 class="publications-paper-title">
+                Deep Learning and Explainability for Improved Drug Discovery
+              </h2>
+              <div class="publications-venue">
+                UTSA CS Course-Based Undergraduate Research Experience Showcase
+                (2024)
+              </div>
+            </header>
+
+            <div class="publications-authors">
+              <span style="color:#2C74B3; font-weight:bold;">Pragathi Durga Rajarajan</span>
+            </div>
+
+            <div class="publications-chips">
+              <span class="publications-chip publications-chip--topic"
+                >AI for Medicine</span
+              >
+              <span class="publications-chip publications-chip--topic"
+                >Drug Discovery</span
+              >
+            </div>
+
+            <div class="publications-links">
+              <!-- <a class="publications-link" href="#" target="_blank"></a> -->
+            </div>
+          </div>
+        </article>
+
+        <!-- ===================== P10 ===================== -->
+        <article class="publications-card">
+          <div class="publications-thumb">
+            <!-- <img src="assets/images/p10.jpg" alt="Cybersecurity and Data Science poster"> -->
+          </div>
+
+          <div class="publications-content">
+            <header class="publications-card-head">
+              <h2 class="publications-paper-title">
+                Researching at the Intersection of Cybersecurity and Data
+                Science
+              </h2>
+              <div class="publications-venue">
+                UTSA Honors College Experiential Learning Fair — Fall 2023
+              </div>
+            </header>
+
+            <div class="publications-authors">
+              <span style="color:#2C74B3; font-weight:bold;">Pragathi Durga Rajarajan</span>
+            </div>
+
+            <div class="publications-chips">
+              <span class="publications-chip publications-chip--topic"
+                >Cybersecurity</span
+              >
+              <span class="publications-chip publications-chip--topic"
+                >Data Science</span
+              >
+              <span
+                class="publications-chip publications-chip--lab publications-lab--syn"
+                >SyN Lab</span
+              >
+            </div>
+
+            <div class="publications-links">
+              <!-- <a class="publications-link" href="#" target="_blank"></a> -->
+            </div>
+          </div>
+        </article>
+
+        <!-- ===================== P11 ===================== -->
+        <article class="publications-card">
+          <div class="publications-thumb">
+            <!-- <img src="assets/images/p11.jpg" alt="Simulated Ransomware Detection poster"> -->
+          </div>
+
+          <div class="publications-content">
+            <header class="publications-card-head">
+              <h2 class="publications-paper-title">
+                Using Simulated Data to Detect Ransomware
+              </h2>
+              <div class="publications-venue">
+                UT Austin College of Natural Sciences — G2S2 Program (2023)
+              </div>
+            </header>
+
+            <div class="publications-authors">
+              <span style="color:#2C74B3; font-weight:bold;">Pragathi Durga Rajarajan</span> and Anusha Abdulla
+            </div>
+
+            <div class="publications-chips">
+              <span class="publications-chip publications-chip--topic"
+                >Ransomware Detection</span
+              >
+              <span class="publications-chip publications-chip--topic"
+                >Random Forest</span
+              >
+              <span
+                class="publications-chip publications-chip--lab publications-lab--syn"
+                >SyN Lab</span
+              >
+            </div>
+
+            <div class="publications-links">
+              <!-- <a class="publications-link" href="#" target="_blank"></a> -->
+            </div>
+          </div>
+        </article>
+      </section>
     </main>
-    
+
     <div id="footer"></div>
     <script>
-        fetch("footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("footer").innerHTML = data;
-            });
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
     </script>
-
-
-</body>
+  </body>
 </html>
