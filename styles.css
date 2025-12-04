@@ -547,7 +547,141 @@ a:hover{text-decoration:underline;}
   }
 }
 
+/* ========================= AWARDS PAGE ========================= */
+
+.awards-page {
+  padding: calc(var(--gap) + 8vh) var(--gap) var(--gap);
+  background: var(--bg);
+  font-family: 'Inter', sans-serif;
+}
+
+.awards-wrap {
+  max-width: var(--maxw);
+  margin: 0 auto;
+}
+
+.awards-title {
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: var(--text);
+}
+
+.awards-subtitle {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+/* ========================= GRID LAYOUT ========================= */
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* ========================= AWARD CARD ========================= */
+
+.award-card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 5px 16px rgba(0,0,0,0.06);
+  border: 1px solid rgba(10,38,71,0.06);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.2s ease;
+  text-align: center;
+}
+
+.award-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+}
+
+/* Make the entire tile clickable when desired */
+.award-clickable {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.award-clickable:hover {
+  background: #f5f7fc;
+}
+
+/* ========================= THUMBNAIL ========================= */
+
+.award-thumb {
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 0.7rem;
+
+  
+  height: 10em;        /* fixed height for uniform layout */
+  width: 100%;
+  object-fit: contain;    /* crops edges instead of distorting */
+  border-radius: 8px;
+}
 
 
+/* ========================= TEXT ELEMENTS ========================= */
 
+.award-name {
+  font-weight: 600;
+  font-size: 0.96rem;
+  color: var(--text);
+  margin-bottom: 0.35rem;
+}
 
+.award-date {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+/* Divider between date and description */
+.award-divider {
+  width: 60%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.12);
+  margin: 0.4rem auto 0.6rem auto;
+}
+
+/* ========================= DESCRIPTION (HOVER EXPAND) ========================= */
+
+.award-desc {
+  font-size: 0.9rem;
+  line-height: 1.35;
+  color: var(--text);
+
+  transition: max-height 0.35s ease-in-out;
+
+  max-height: none;
+  overflow: visible;
+}
+
+/*
+.award-card:hover .award-desc {
+  max-height: 12em;            
+} 
+*/
+
+/* ========================= RESPONSIVE ========================= */
+
+@media (max-width: 1000px) {
+  .awards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .awards-grid {
+    grid-template-columns: 1fr;
+  }
+}
