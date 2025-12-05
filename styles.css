@@ -189,7 +189,7 @@ main {
 }
 
 .research-title{
-  font-size:clamp(1.6rem,1.2rem + 1.5vw,2.25rem);
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
   margin:0 0 1.25rem 0;
 }
 
@@ -346,7 +346,7 @@ a:hover{text-decoration:underline;}
   font-family: 'Inter', sans-serif;
   background: var(--bg, #f7f8fb);
   color: var(--text, #1c2430);
-  padding: calc(var(--gap, 2rem) + 8vh) var(--gap, 2rem) var(--gap, 2rem); /* extra top if header is fixed */
+  padding: 6rem 2rem 2.5rem;
 }
 
 .publications-wrap {
@@ -550,7 +550,7 @@ a:hover{text-decoration:underline;}
 /* ========================= AWARDS PAGE ========================= */
 
 .awards-page {
-  padding: calc(var(--gap) + 8vh) var(--gap) var(--gap);
+  padding: 6rem 2rem 2.5rem;
   background: var(--bg);
   font-family: 'Inter', sans-serif;
 }
@@ -565,6 +565,7 @@ a:hover{text-decoration:underline;}
   font-weight: 700;
   margin-bottom: 0.25rem;
   color: var(--text);
+  
 }
 
 .awards-subtitle {
@@ -691,7 +692,7 @@ a:hover{text-decoration:underline;}
    =============================== */
 
 .leadership-page {
-  padding: 8rem 2rem 3rem;
+  padding: 6rem 2rem 2.5rem;
   background: var(--bg);
 }
 
@@ -701,7 +702,7 @@ a:hover{text-decoration:underline;}
 }
 
 .leadership-title {
-  font-size: clamp(1.6rem, 2.3vw, 2.2rem);
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
   font-weight: 700;
   margin-bottom: 0.5rem;
   text-align: center;
@@ -832,3 +833,4 @@ a:hover{text-decoration:underline;}
 .leadership-links a:hover {
   color: #144272;
 }
+
