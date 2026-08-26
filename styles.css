@@ -201,6 +201,10 @@ main {
 
 /* ========= LAB SECTION GRID ========= */
 
+.research-interest-chips {
+    margin-bottom: 1rem;
+}
+
 .research-lab-section{
   position:relative;
 

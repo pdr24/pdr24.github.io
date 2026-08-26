@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research</title>
     <link rel="stylesheet" href="styles.css">
-
 </head>
+
 <body>
 
     <div id="header"></div>
@@ -22,280 +22,296 @@
     <main class="research-page">
 
         <h1 class="research-title">Research</h1>
+
         <p class="research-lead">
-            Selected research across UTSA labs spanning computer vision, distributed deep learning on resource-constrained devices,
-            AI education tools, and network security analytics.
+            My research interests center on developing machine learning systems that are reliable, interpretable, and effective in complex real-world settings.
+            My research experience spans data-efficient learning and scientific image segmentation, distributed deep learning, AI education, and machine learning for cybersecurity.
         </p>
 
-        <!-- ========== LAB: VAIL ========== -->
+        <div class="research-chips research-interest-chips">
+            <span class="research-chip">Multimodal Learning</span>
+            <span class="research-chip">Interpretability & Reliable AI</span>
+            <span class="research-chip">Continual Learning</span>
+            <span class="research-chip">AI for Science</span>
+        </div>
+
+
+        <!-- ========== VAIL ========== -->
         <section class="research-lab-section" id="vail">
+
             <div class="research-lab-left">
                 <h2 class="research-lab-name">Vision and AI Lab (VAIL)</h2>
                 <p class="research-lab-pi">Advisor: Dr. Amanda Fernandez</p>
-                <p class="research-lab-meta">Focus: Computer Vision, Explainability and Optimization, AI for Science.</p>
+                <p class="research-lab-meta">
+                    Research Areas: Data-Efficient Machine Learning, Computer Vision, AI for Science.
+                </p>
             </div>
 
             <div class="research-lab-right">
                 <div class="research-projects">
 
                     <article class="research-project-card">
-                        <h3 class="research-project-title">Data Pruning for Optimizing AI Model Training</h3>
-                        <p class="research-project-venue">In progress — Undergraduate Honors Thesis</p>
-                        <p class="research-project-desc">
-                            Studying data pruning metrics and randomization approaches to optimize AI model training and insights into interpretability. 
+
+                        <h3 class="research-project-title">
+                            Data Pruning Across Learning Tasks
+                        </h3>
+
+                        <p class="research-project-venue">
+                            Undergraduate Honors Thesis
                         </p>
+
+                        <p class="research-project-desc">
+                            Investigated whether data pruning methods designed to identify high-utility samples for image classification transfer effectively to semantic segmentation.
+                            Evaluated pruning strategies across segmentation models and datasets to characterize how sample-utility signals generalize across learning tasks and their potential for reducing training data requirements.
+                        </p>
+
                         <div class="research-chips">
-                            <span class="research-chip">Optimization</span>
+                            <span class="research-chip">Data-Efficient ML</span>
                             <span class="research-chip">Data Pruning</span>
+                            <span class="research-chip">Semantic Segmentation</span>
                         </div>
+
                     </article>
 
+
                     <article class="research-project-card">
-                        <h3 class="research-project-title">Multimodal Defect Detection for Nuclear Materials</h3>
-                        <p class="research-project-venue">MM4Mat Workshop Spotlight Paper @ CVPR 2025, Research Posters</p>
-                        <p class="research-project-desc">
-                            Developed semantic segmentation codebase using Meta's Segment-Anything-2 model and adapted it for domain-specific datasets. 
-                            Explored multimodal and few-shot approaches for improving defect detection in nuclear materials facribation applications. 
-                            Evaluated models (SAM2, DeepLabV3, and PRNet) on Stainless-25 (fuel rod samples) and MVTec AD (materials anomaly detection benchmark).
+
+                        <h3 class="research-project-title">
+                            Scientific Image Semantic Segmentation for Materials Defect Detection
+                        </h3>
+
+                        <p class="research-project-venue">
+                            MM4Mat Workshop Spotlight Paper @ CVPR 2025 · Research Posters
                         </p>
+
+                        <p class="research-project-desc">
+                            Developed a semantic segmentation codebase using Meta's Segment Anything 2 (SAM2) and adapted promptable segmentation for domain-specific materials datasets.
+                            Evaluated SAM2, DeepLabV3, PRNet, and few-shot segmentation approaches to investigate methods for accurately localizing material defects when labeled scientific imaging data is limited.
+                        </p>
+
                         <div class="research-chips">
+                            <span class="research-chip">AI for Science</span>
                             <span class="research-chip">Computer Vision</span>
                             <span class="research-chip">Semantic Segmentation</span>
                             <span class="research-chip">Few-Shot Learning</span>
                         </div>
+
                     </article>
 
                 </div>
             </div>
+
         </section>
 
-        <!-- ========== LAB: CloudSys ========== -->
+
+        <!-- ========== CloudSys ========== -->
         <section class="research-lab-section" id="cloudsys">
+
             <div class="research-lab-left">
-                <h2 class="research-lab-name">Cloud Systems (CloudSys) Lab</h2>
+                <h2 class="research-lab-name">AI & Cloud Systems Lab</h2>
                 <p class="research-lab-pi">Advisor: Dr. Palden Lama</p>
-                <p class="research-lab-meta">Focus: Distributed Inference, Edge Clusters.</p>
+                <p class="research-lab-meta">
+                    Research Areas: Distributed Machine Learning, Edge AI, Resource-Constrained Computing.
+                </p>
             </div>
 
             <div class="research-lab-right">
                 <div class="research-projects">
 
                     <article class="research-project-card">
-                        <h3 class="research-project-title">Distributed DNN Inference on Edge Devices</h3>
-                        <p class="research-project-venue">IEEE EdgeCom 2025 Paper, Research Posters</p>
-                        <p class="research-project-desc">
-                            Developed distributed deep learning pipeline using RPC for inference on resource contrained edge devices. 
-                            Profiled latency and resource utilization trade-offs.
+
+                        <h3 class="research-project-title">
+                            Distributed DNN Inference on Edge Devices
+                        </h3>
+
+                        <p class="research-project-venue">
+                            IEEE EdgeCom 2025 Paper · Research Posters
                         </p>
+
+                        <p class="research-project-desc">
+                            Co-developed a distributed inference pipeline using PyTorch RPC to partition DNN execution across resource-constrained Raspberry Pi edge devices.
+                            Benchmarked multiple CNN architectures and profiled inference latency, throughput, CPU utilization, and memory usage to characterize the performance and resource tradeoffs of distributed deep learning at the edge.
+                        </p>
+
                         <div class="research-chips">
-                            <span class="research-chip">Distributed DL</span>
+                            <span class="research-chip">Distributed ML</span>
                             <span class="research-chip">Model Parallelism</span>
                             <span class="research-chip">Edge AI</span>
                         </div>
-                    </article>
 
-                    <article class="research-project-card">
-                        <h3 class="research-project-title">Benchmarking CNNs on Edge Devices</h3>
-                        <p class="research-project-venue">Research Poster</p>
-                        <p class="research-project-desc">
-                            Developed codebase to benchmark CNNs on edge devices and collect resource utilization metrics. 
-                        </p>
-                        <div class="research-chips">
-                            <span class="research-chip">Edge AI</span>
-                            <span class="research-chip">CNNs</span>
-                        </div>
                     </article>
 
                 </div>
             </div>
+
         </section>
 
-        <!-- ========== LAB: ECG ========== -->
-        <section class="research-lab-section" id="ecg">
-            <div class="research-lab-left">
-                <h2 class="research-lab-name">Engaging Computing Group</h2>
-                <p class="research-lab-pi">Advisor: Dr. Fred Martin</p>
-                <p class="research-lab-meta">Focus: K-12 AI education, Interactive Software Learning Tools.</p>
-            </div>
 
-            <div class="research-lab-right">
-                <div class="research-projects">
-
-                    <article class="research-project-card">
-                        <h3 class="research-project-title">AI Afterschool Program for High Schoolers</h3>
-                        <p class="research-project-venue">In Progress</p>
-                        <p class="research-project-desc">
-                            Developing an AI afterschool program for high school students, covering topics such as supervised learning, neural networks, and AI ethics.
-                        </p>
-                        <div class="research-chips">
-                            <span class="research-chip">AI Literacy</span>
-                            <span class="research-chip">K-12</span>
-                        </div>
-                    </article>
-
-                    <article class="research-project-card">
-                        <h3 class="research-project-title">AI-See — Teaching Image Recognition</h3>
-                        <p class="research-project-venue">ACM SIGCSE TS 2026 Paper</p>
-                        <p class="research-project-desc">
-                            Developed and evaluated a web application for introducing feature maps and kernels to middle school students. 
-                            AI-See uncovers the role of matrix multiplication in feature extraction for image recognition through practice and challenge levels.  
-                            Evaluated at an afterschool event and an AI-focused summer camp.
-                        </p>
-                        <div class="research-chips">
-                            <span class="research-chip">AI Literacy</span>
-                            <span class="research-chip">K-12</span>
-                        </div>
-                    </article>
-
-                    <article class="research-project-card">
-                        <h3 class="research-project-title">AI Summer Camp</h3>
-                        <p class="research-project-venue">ACM SIGCSE TS 2026 Paper</p>
-                        <p class="research-project-desc">
-                            Contributed to the design and development of a curriculum for an AI-focused 4-day summer camp for middler schoolers. 
-                            Developed and delivered 3 modules: image recognition, search algorithms, and decision trees. 
-                            Integrated interactive presentations and discussions to engage students. 
-                        </p>
-                        <div class="research-chips">
-                            <span class="research-chip">AI Literacy</span>
-                            <span class="research-chip">K-12</span>
-                        </div>
-                    </article>
-
-                    <article class="research-project-card">
-                        <h3 class="research-project-title">IntoTheRabbitHole — Teaching Search Algorithms</h3>
-                        <p class="research-project-venue">ACM ITiCSE 2025 — Best Paper Nominee</p>
-                        <p class="research-project-desc">
-                            Developed and evaluated a web application for teaching Depth First Search and Breadth First Search to middle school students.
-                            They learn search algorithms through interactive graph traversal puzzles where students help a rabbit search for its carrot across practice and challenge levels.
-                        </p>
-                        <div class="research-chips">
-                            <span class="research-chip">CS Education</span>
-                            <span class="research-chip">K-12</span>
-                            <span class="research-chip">Best Paper Nominee</span>
-
-                        </div>
-                    </article>
-
-                    
-
-                    <article class="research-project-card">
-                        <h3 class="research-project-title">FaunaForest — Teaching Decision Trees</h3>
-                        <p class="research-project-venue">IEEE ISEC 2025 Paper, Research Posters</p>
-                        <p class="research-project-desc">
-                            Developed and evaluated a web application for teaching decision trees to middle school students. 
-                            Students complete decision tree puzzles where some nodes are blank to learn decision tree struction and functionality. 
-                        </p>
-                        <div class="research-chips">
-                            <span class="research-chip">AI Literacy</span>
-                            <span class="research-chip">K-12</span>
-                        </div>
-                    </article>
-
-                    <article class="research-project-card">
-                        <h3 class="research-project-title">TrainYourSnakeAI — Teaching Reinforcement Learning</h3>
-                        <p class="research-project-venue">ACM SIGCSE TS 2025 Paper</p>
-                        <p class="research-project-desc">
-                            Added a game state visualization feature to uncover computer perception and reinforcement learning concepts. 
-                            Evaluated the tool with middle and high school students. 
-                        </p>
-                        <div class="research-chips">
-                            <span class="research-chip">AI Literacy</span>
-                            <span class="research-chip">K-12</span>
-                        </div>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- ========== LAB: SyN ========== -->
+        <!-- ========== SyN ========== -->
         <section class="research-lab-section" id="syn">
+
             <div class="research-lab-left">
                 <h2 class="research-lab-name">Systems & Networks (SyN) Lab</h2>
                 <p class="research-lab-pi">Advisor: Dr. Rajendra Boppana</p>
-                <p class="research-lab-meta">Focus: Network Security, Malware Detection.</p>
+                <p class="research-lab-meta">
+                    Research Areas: Machine Learning, Network Security, Malware Detection.
+                </p>
             </div>
 
             <div class="research-lab-right">
                 <div class="research-projects">
 
                     <article class="research-project-card">
-                        <h3 class="research-project-title">Malware Detection from IoT Network Traffic</h3>
-                        <p class="research-project-venue">In Progress</p>
-                        <p class="research-project-desc">
-                            Developing machine learning for malware detection on IoT devices based on network traffic, with a focus on generalizability. 
-                            Evaluating machine learning models on IoT-23, ToN-IoT, and BoT-IoT datasets.
-                            Next steps involve exploring custom feature generation using LLMs.
+
+                        <h3 class="research-project-title">
+                            Out-of-Distribution Generalization for IoT Malware Detection
+                        </h3>
+
+                        <p class="research-project-venue">
+                            RSAC Security Scholar Poster Exhibition · Research Posters
                         </p>
+
+                        <p class="research-project-desc">
+                            Developed a configurable machine learning experimentation pipeline to investigate out-of-distribution generalization in network-based IoT malware detection.
+                            Systematically varied classifiers, feature configurations, and training and testing datasets to characterize performance under cross-dataset distribution shifts using IoT-23, ToN-IoT, and BoT-IoT data.
+                            Later explored LLM-based custom feature generation from network traffic as an alternative to commonly defined features.
+                        </p>
+
                         <div class="research-chips">
+                            <span class="research-chip">OOD Generalization</span>
                             <span class="research-chip">IoT Security</span>
-                            <span class="research-chip">Network Traffic Analysis</span>
                             <span class="research-chip">Machine Learning</span>
                         </div>
+
                     </article>
 
+
                     <article class="research-project-card">
-                        <h3 class="research-project-title">Malware Detection on IoT-23 Dataset</h3>
-                        <p class="research-project-venue">RSAC Secutiy Scholar Poster Exhibition</p>
-                        <p class="research-project-desc">
-                            Evaluated machine learning models on the IoT-23 dataset for malware detection.
+
+                        <h3 class="research-project-title">
+                            Simulated Stressed System Data for Ransomware Detection
+                        </h3>
+
+                        <p class="research-project-venue">
+                            Research Poster
                         </p>
-                        <div class="research-chips">
-                            <span class="research-chip">IoT Security</span>
-                            <span class="research-chip">Network Traffic Analysis</span>
-                            <span class="research-chip">Machine Learning</span>
-                        </div>
-                    </article>
 
-                    <article class="research-project-card">
-                        <h3 class="research-project-title">Generating Stressed Data for Ransomware Detection</h3>
-                        <p class="research-project-venue">Research Poster</p>
                         <p class="research-project-desc">
-                            Generated stressed system data for use with machine learning to detect ransomware activity. 
-                            The use of stressed data was explored to see its potential in preventing the need for running problematic ransowmare. 
+                            Investigated whether benign resource-intensive workloads could simulate system behavior useful for training machine learning models for ransomware detection without directly executing ransomware.
+                            Generated stressed system data and evaluated whether resource-utilization patterns could be distinguished from normal benign activity, exploring a safer approach to collecting data for malware-detection research.
+                        </p>
+
                         <div class="research-chips">
                             <span class="research-chip">Ransomware Detection</span>
-                            <span class="research-chip">Random Forest</span>
+                            <span class="research-chip">Machine Learning</span>
+                            <span class="research-chip">System Telemetry</span>
                         </div>
+
                     </article>
 
                 </div>
             </div>
+
         </section>
 
 
-        <!-- ========== CURE Course ========== -->
-        <section class="research-lab-section" id="cure">
+        <!-- ========== ECG ========== -->
+        <section class="research-lab-section" id="ecg">
+
             <div class="research-lab-left">
-                <h2 class="research-lab-name">CS Course Based Undergraduate Research Experience (CURE)</h2>
-                <p class="research-lab-pi">Advisor: Dr. Amanda Fernandez</p>
+                <h2 class="research-lab-name">Engaging Computing Group</h2>
+                <p class="research-lab-pi">Advisor: Dr. Fred Martin</p>
+                <p class="research-lab-meta">
+                    Research Areas: K-12 AI Education, Computing Education, Interactive Learning Tools.
+                </p>
             </div>
 
             <div class="research-lab-right">
                 <div class="research-projects">
 
+                    <!-- Interactive AI Education Tools -->
                     <article class="research-project-card">
-                        <h3 class="research-project-title">Deep Learning for Drug Discovery</h3>
-                        <p class="research-project-venue">Research Poster</p>
-                        <p class="research-project-desc">
-                            Studied deep learning techniques for more efficient molecule interaction modeling and drug discovery.
+
+                        <h3 class="research-project-title">
+                            Interactive Tools for K-12 AI Education
+                        </h3>
+
+                        <p class="research-project-venue">
+                            ACM ITiCSE 2025 · IEEE ISEC 2025 · ACM SIGCSE TS 2026
                         </p>
+
+                        <p class="research-project-desc">
+                            Developed interactive web-based learning tools that expose the internal mechanics of AI and computing concepts to middle school students: RuleRunners for rule-based AI, AI-See for image recognition, IntoTheRabbitHole for search algorithms, and FaunaForest for decision trees.
+                            Evaluated the tools with middle school students in an afterschool AI program to study how interactive, challenge-based activities can support understanding of otherwise abstract computational concepts.
+                        </p>
+
                         <div class="research-chips">
-                            <span class="research-chip">AI for Healthcare</span>
-                            <span class="research-chip">Deep Learning</span>
+                            <span class="research-chip">AI Literacy</span>
+                            <span class="research-chip">Computing Education</span>
+                            <span class="research-chip">Interactive Learning</span>
+                            <span class="research-chip">K-12</span>
                         </div>
+
                     </article>
 
-                    
-                   
+
+                    <!-- AI Summer Camp -->
+                    <article class="research-project-card">
+
+                        <h3 class="research-project-title">
+                            AI Summer Camp
+                        </h3>
+
+                        <p class="research-project-venue">
+                            ACM SIGCSE TS 2026
+                        </p>
+
+                        <p class="research-project-desc">
+                            Developed and delivered interactive AI learning modules for middle school students covering image recognition, search algorithms, decision trees, and rule-based AI.
+                            Designed hands-on activities and challenges that translate algorithmic processes into observable, interactive experiences, enabling students to reason about how different AI systems represent information and make decisions.
+                        </p>
+
+                        <div class="research-chips">
+                            <span class="research-chip">AI Literacy</span>
+                            <span class="research-chip">Curriculum Design</span>
+                            <span class="research-chip">K-12</span>
+                        </div>
+
+                    </article>
+
+
+                    <!-- DoppelBot -->
+                    <article class="research-project-card">
+
+                        <h3 class="research-project-title">
+                            DoppelBot — Identifying LLM Agents in Collaborative Settings
+                        </h3>
+
+                        <p class="research-project-venue">
+                            EMNLP 2026 Main Conference Paper
+                        </p>
+
+                        <p class="research-project-desc">
+                            Investigated how middle school students identify LLM agents in live collaborative settings using interaction data collected through DoppelBot.
+                            Analyzed and annotated student interactions to characterize the reasoning strategies students use to distinguish AI agents from human collaborators, contributing a CS education perspective to the study.
+                        </p>
+
+                        <div class="research-chips">
+                            <span class="research-chip">LLM Agents</span>
+                            <span class="research-chip">AI Education</span>
+                            <span class="research-chip">Human-AI Interaction</span>
+                        </div>
+
+                    </article>
 
                 </div>
             </div>
+
         </section>
 
     </main>
-    
-    
+
+
     <div id="footer"></div>
     <script>
         fetch("footer.html")
@@ -304,7 +320,6 @@
                 document.getElementById("footer").innerHTML = data;
             });
     </script>
-
 
 </body>
 </html>
