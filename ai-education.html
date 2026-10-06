@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Education Research</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="header"></div>
+    <script>
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+    </script>
+
+
+    <main class="aied-page">
+
+        <a class="aied-back" href="research.html#ecg">
+            <i class="fa-solid fa-arrow-left"></i> Back to Research
+        </a>
+
+        <h1 class="research-title">AI Education Research</h1>
+
+        <!-- ========== SUMMARY ========== -->
+        <section class="aied-summary">
+            <p class="aied-lab">Engaging Computing Group · Advisor: Dr. Fred Martin</p>
+
+            <p class="research-lead">
+                In Dr. Fred Martin's Engaging Computing Group, I design interactive software tools that make the inner workings of AI visible to young learners.
+                I have <span class="highlight">developed and evaluated these tools with middle school children across after-school and summer camp settings</span>,
+                covering decision trees, search algorithms, image recognition, rule-based AI, and reinforcement learning, and studying how students tell LLM agents apart from human collaborators.
+                Each tool turns an abstract algorithm into something students can watch, manipulate, and challenge. We then study what students come to understand and where misconceptions persist.
+                This work has been published at ACM ITiCSE, ACM SIGCSE TS, IEEE ISEC, ACM SIGCSE Virtual, and EMNLP.
+            </p>
+
+            <div class="research-chips">
+                <span class="research-chip">K-12 AI Literacy</span>
+                <span class="research-chip">Computing Education</span>
+                <span class="research-chip">Interactive Learning Tools</span>
+                <span class="research-chip">After-School Programs</span>
+                <span class="research-chip">Summer Camps</span>
+            </div>
+        </section>
+
+
+        <!-- ========== TOOLS CAROUSEL ========== -->
+        <h2 class="aied-section-title">Tools</h2>
+
+        <section class="aied-carousel" aria-roledescription="carousel" aria-label="AI education tools">
+
+            <div class="aied-controls">
+                <button class="aied-btn aied-prev" type="button" aria-label="Previous tool">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="aied-btn aied-pause" type="button" aria-label="Pause rotation">
+                    <i class="fa-solid fa-pause"></i>
+                </button>
+                <button class="aied-btn aied-next" type="button" aria-label="Next tool">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="aied-track" aria-live="off">
+
+                <!-- FaunaForest -->
+                <article class="aied-slide" aria-roledescription="slide">
+                    <div class="aied-media">
+                        <img src="assets/images/paper_thumbnails/FF_thumbnail.png" alt="FaunaForest screenshot">
+                    </div>
+                    <div class="aied-body">
+                        <p class="aied-concept">Decision Trees</p>
+                        <h3 class="aied-name">FaunaForest</h3>
+                        <p class="research-project-venue">IEEE ISEC 2025</p>
+                        <p class="aied-desc">
+                            A web-based tool that introduces middle school students to decision trees.
+                            Students build and test trees through challenge-based activities and see how each split on a feature leads to a classification.
+                        </p>
+                        <div class="aied-links">
+                            <a class="aied-link" href="https://doi.org/10.1109/ISEC64801.2025.11147419" target="_blank">
+                                <i class="fa-solid fa-file-lines"></i> Paper
+                            </a>
+                            <a class="aied-link aied-link--primary" href="https://engaging-computing.github.io/FaunaForest/" target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Try the Tool
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- IntoTheRabbitHole -->
+                <article class="aied-slide" aria-roledescription="slide">
+                    <div class="aied-media">
+                        <img src="assets/images/paper_thumbnails/ITRH_thumbnail.png" alt="IntoTheRabbitHole screenshot">
+                    </div>
+                    <div class="aied-body">
+                        <p class="aied-concept">Search Algorithms</p>
+                        <h3 class="aied-name">IntoTheRabbitHole</h3>
+                        <p class="research-project-venue">ACM ITiCSE 2025 · Best Paper Nominee</p>
+                        <p class="aied-desc">
+                            A web application that makes search algorithms observable.
+                            Students step through how different strategies explore a space to reach a goal and compare how efficiently each one finds it.
+                        </p>
+                        <div class="aied-links">
+                            <a class="aied-link" href="https://doi.org/10.1145/3724363.3729080" target="_blank">
+                                <i class="fa-solid fa-file-lines"></i> Paper
+                            </a>
+                            <a class="aied-link aied-link--primary" href="https://pdr24.github.io/IntoTheRabbitHole/" target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Try the Tool
+                            </a>
+                            <a class="aied-link" href="https://github.com/pdr24/IntoTheRabbitHole" target="_blank">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- AI-See -->
+                <article class="aied-slide" aria-roledescription="slide">
+                    <div class="aied-media">
+                        <img src="assets/images/paper_thumbnails/AISee_thumbnail.jpg" alt="AI-See screenshot">
+                    </div>
+                    <div class="aied-body">
+                        <p class="aied-concept">Image Recognition</p>
+                        <h3 class="aied-name">AI-See</h3>
+                        <p class="research-project-venue">ACM SIGCSE TS 2026</p>
+                        <p class="aied-desc">
+                            An interactive image recognition module taught to children at an AI summer camp.
+                            Activities show how a model turns pixels into features and predictions, so students can reason about why it succeeds or fails.
+                        </p>
+                        <div class="aied-links">
+                            <a class="aied-link" href="https://doi.org/10.1145/3770762.3772635" target="_blank">
+                                <i class="fa-solid fa-file-lines"></i> Paper
+                            </a>
+                            <a class="aied-link aied-link--primary" href="https://pdr24.github.io/AI-See/" target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Try the Tool
+                            </a>
+                            <a class="aied-link" href="https://github.com/pdr24/ImageRecognitionEd-SIGCSE2026" target="_blank">
+                                <i class="fa-brands fa-github"></i> Module Materials
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- RuleRunners -->
+                <article class="aied-slide" aria-roledescription="slide">
+                    <div class="aied-media aied-media--placeholder">
+                        <!-- TODO: replace with a RuleRunners screenshot -->
+                        <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
+                    </div>
+                    <div class="aied-body">
+                        <p class="aied-concept">Rule-Based AI</p>
+                        <h3 class="aied-name">RuleRunners</h3>
+                        <p class="research-project-venue">ACM SIGCSE Virtual 2026 · To Appear</p>
+                        <p class="aied-desc">
+                            A two-player collaborative tool that introduces middle school students to rule-based AI systems.
+                            Partners write and refine rules together and watch how those rules drive an agent's behavior.
+                        </p>
+                        <div class="aied-links">
+                            <!-- TODO: replace with paper link when published -->
+                            <span class="aied-link aied-link--disabled" aria-disabled="true">
+                                <i class="fa-solid fa-clock"></i> Paper Coming Soon
+                            </span>
+                            <a class="aied-link aied-link--primary" href="https://pdr24.github.io/RuleRunners/" target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Try the Tool
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- DoppelBot -->
+                <article class="aied-slide" aria-roledescription="slide">
+                    <div class="aied-media aied-media--placeholder">
+                        <!-- TODO: replace with a DoppelBot screenshot -->
+                        <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+                    </div>
+                    <div class="aied-body">
+                        <p class="aied-concept">LLM Agents &amp; Human-AI Interaction</p>
+                        <h3 class="aied-name">DoppelBot</h3>
+                        <p class="research-project-venue">EMNLP 2026 Main Conference · To Appear</p>
+                        <p class="aied-desc">
+                            A live collaborative setting in which middle school students work alongside hidden LLM agents and try to identify which collaborators are AI.
+                            I analyzed and annotated student interactions to characterize the reasoning strategies students use to tell AI from human collaborators.
+                        </p>
+                        <div class="aied-links">
+                            <a class="aied-link" href="https://arxiv.org/abs/2608.30948" target="_blank">
+                                <i class="fa-solid fa-file-lines"></i> Paper
+                            </a>
+                            <!-- TODO: replace with live tool link when available -->
+                            <span class="aied-link aied-link--disabled" aria-disabled="true">
+                                <i class="fa-solid fa-clock"></i> Live Tool Coming Soon
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- TrainYourSnakeAI -->
+                <article class="aied-slide" aria-roledescription="slide">
+                    <div class="aied-media">
+                        <img src="assets/images/paper_thumbnails/TrainYourSnakeAI_thumbnail.png" alt="TrainYourSnakeAI screenshot">
+                    </div>
+                    <div class="aied-body">
+                        <p class="aied-concept">Reinforcement Learning</p>
+                        <h3 class="aied-name">TrainYourSnakeAI</h3>
+                        <p class="research-project-venue">ACM SIGCSE TS 2025</p>
+                        <p class="aied-desc">
+                            A tool that teaches reinforcement learning to middle school students by training an agent to play Snake.
+                            Students adjust rewards and watch the agent's behavior change over training.
+                        </p>
+                        <div class="aied-links">
+                            <a class="aied-link" href="https://doi.org/10.1145/3641554.3701907" target="_blank">
+                                <i class="fa-solid fa-file-lines"></i> Paper
+                            </a>
+                            <a class="aied-link" href="https://github.com/cesarihinojosa/train-your-ai" target="_blank">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- AI for Everyone -->
+                <article class="aied-slide" aria-roledescription="slide">
+                    <div class="aied-media">
+                        <img src="assets/images/paper_thumbnails/AI_For_Everyone_thumbnail.png" alt="AI for Everyone summer camp">
+                    </div>
+                    <div class="aied-body">
+                        <p class="aied-concept">AI Summer Camp Curriculum</p>
+                        <h3 class="aied-name">AI for Everyone</h3>
+                        <p class="research-project-venue">ACM SIGCSE TS 2026</p>
+                        <p class="aied-desc">
+                            A summer camp curriculum that engages middle schoolers through collaborative, ethical, and multimodal AI learning.
+                            It brings together hands-on modules on image recognition, search, decision trees, and rule-based AI.
+                        </p>
+                        <div class="aied-links">
+                            <a class="aied-link" href="https://doi.org/10.1145/3770762.3772627" target="_blank">
+                                <i class="fa-solid fa-file-lines"></i> Paper
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="aied-dots" role="group" aria-label="Choose a tool"></div>
+
+        </section>
+
+    </main>
+
+
+    <div id="footer"></div>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+
+
+    <!-- Carousel: auto-rotates, pauses on hover/focus, honors reduced motion -->
+    <script>
+        (function () {
+            const carousel = document.querySelector(".aied-carousel");
+            const slides = Array.from(carousel.querySelectorAll(".aied-slide"));
+            const dotsWrap = carousel.querySelector(".aied-dots");
+            const pauseBtn = carousel.querySelector(".aied-pause");
+            const INTERVAL = 7000;
+            const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+            let index = 0;
+            let timer = null;
+            let userPaused = reduceMotion;
+            let hoverPaused = false;
+
+            const dots = slides.map((slide, i) => {
+                const name = slide.querySelector(".aied-name").textContent.trim();
+                slide.setAttribute("aria-label", `${i + 1} of ${slides.length}: ${name}`);
+
+                const dot = document.createElement("button");
+                dot.type = "button";
+                dot.className = "aied-dot";
+                dot.setAttribute("aria-label", name);
+                dot.addEventListener("click", () => show(i));
+                dotsWrap.appendChild(dot);
+                return dot;
+            });
+
+            function show(i) {
+                index = (i + slides.length) % slides.length;
+                slides.forEach((s, j) => {
+                    const active = j === index;
+                    s.classList.toggle("is-active", active);
+                    s.hidden = !active;
+                });
+                dots.forEach((d, j) => d.setAttribute("aria-current", j === index ? "true" : "false"));
+                restart();
+            }
+
+            function restart() {
+                clearInterval(timer);
+                timer = null;
+                if (!userPaused && !hoverPaused) {
+                    timer = setInterval(() => show(index + 1), INTERVAL);
+                }
+            }
+
+            function updatePauseBtn() {
+                pauseBtn.innerHTML = userPaused
+                    ? '<i class="fa-solid fa-play"></i>'
+                    : '<i class="fa-solid fa-pause"></i>';
+                pauseBtn.setAttribute("aria-label", userPaused ? "Start rotation" : "Pause rotation");
+                carousel.querySelector(".aied-track").setAttribute("aria-live", userPaused ? "polite" : "off");
+            }
+
+            carousel.querySelector(".aied-prev").addEventListener("click", () => show(index - 1));
+            carousel.querySelector(".aied-next").addEventListener("click", () => show(index + 1));
+            pauseBtn.addEventListener("click", () => {
+                userPaused = !userPaused;
+                updatePauseBtn();
+                restart();
+            });
+
+            carousel.addEventListener("mouseenter", () => { hoverPaused = true; restart(); });
+            carousel.addEventListener("mouseleave", () => { hoverPaused = false; restart(); });
+            carousel.addEventListener("focusin", () => { hoverPaused = true; restart(); });
+            carousel.addEventListener("focusout", (e) => {
+                if (!carousel.contains(e.relatedTarget)) { hoverPaused = false; restart(); }
+            });
+
+            carousel.addEventListener("keydown", (e) => {
+                if (e.key === "ArrowLeft") show(index - 1);
+                if (e.key === "ArrowRight") show(index + 1);
+            });
+
+            let touchX = null;
+            carousel.addEventListener("touchstart", (e) => { touchX = e.touches[0].clientX; }, { passive: true });
+            carousel.addEventListener("touchend", (e) => {
+                if (touchX === null) return;
+                const dx = e.changedTouches[0].clientX - touchX;
+                if (Math.abs(dx) > 40) show(index + (dx < 0 ? 1 : -1));
+                touchX = null;
+            });
+
+            updatePauseBtn();
+            show(0);
+        })();
+    </script>
+
+</body>
+</html>
