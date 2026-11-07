@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header"></div>
+    <script>
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => { document.getElementById("header").innerHTML = data; });
+    </script>
+
+    <main class="presentations-page">
+        <div class="presentations-wrap">
+            <h1 class="presentations-title">Conference Presentations</h1>
+            <p class="presentations-subtitle">
+                Selected presentations of my research at academic conferences.
+                Explore each presentation for additional details and resources.
+            </p>
+
+            <section class="presentations-grid" aria-label="Conference presentation listings">
+
+                
+                <!-- ================= RULERUNNERS - SIGCSE VIRTUAL 2026 ================= -->
+                <article class="presentation-card">
+
+                    <div class="presentation-card-top">
+                        <span class="presentation-chip">K-12 AI Education</span>
+                        <span class="presentation-chip">Rule-Based AI</span>
+                        <span class="presentation-chip">Interactive Learning Tools</span>
+                    </div>
+
+                    <h2 class="presentation-card-title">
+                        <a class="presentation-card-main-link"
+                        href="presentations/rulerunners_sigcsev_2026.html">
+                            RuleRunners: A Two-Player Collaborative Software Tool
+                            for Introducing Rule-Based AI Systems to Middle School Students
+                        </a>
+                    </h2>
+
+                    <p class="presentation-card-venue">
+                        ACM SIGCSE Virtual 2026
+                    </p>
+
+                    <div class="presentation-card-meta">
+                        <p>
+                            <strong>Authors:</strong>
+                            Pragathi Durga Rajarajan, Dr. Fred Martin
+                        </p>
+
+                        <p>
+                            <strong>University / Group:</strong>
+                            University of Texas at San Antonio - Engaging Computing Group
+                        </p>
+                    </div>
+
+                    <div class="presentation-card-footer">
+                        <span class="presentation-card-action" aria-hidden="true">
+                            View presentation details &rarr;
+                        </span>
+
+                        <a class="presentation-resource"
+                        href="https://pdr24.github.io/RuleRunners/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                            Live Link
+                        </a>
+
+                        <a class="presentation-resource"
+                        href="https://github.com/pdr24/RuleRunners"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                            GitHub
+                        </a>
+
+                        <a class="presentation-resource"
+                        href="https://doi.org/10.1145/3795867.3831025"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                            Paper
+                        </a>
+                    </div>
+
+                </article>
+
+                <!-- ================= IMAGE RECOGNITION - SIGCSE TS 2026 ================= -->
+                <article class="presentation-card">
+
+                    <div class="presentation-card-top">
+                        <span class="presentation-chip">K-12 AI Education</span>
+                        <span class="presentation-chip">Interactive Learning Tools</span>
+                    </div>
+
+                    <h2 class="presentation-card-title">
+                        <a class="presentation-card-main-link"
+                        href="presentations/ir_module_sigcse_2026.html">
+                            On Teaching Image Recognition to Children at a Summer Camp
+                        </a>
+                    </h2>
+
+                    <p class="presentation-card-venue">
+                        ACM Technical Symposium on Computer Science Education (SIGCSE TS 2026)
+                    </p>
+
+                    <div class="presentation-card-meta">
+                        <p>
+                            <strong>Authors:</strong>
+                            Pragathi Durga Rajarajan, Dr. Fred Martin
+                        </p>
+                        <p>
+                            <strong>University / Group:</strong>
+                            University of Texas at San Antonio - Engaging Computing Group
+                        </p>
+                    </div>
+
+                    <div class="presentation-card-footer">
+                        <span class="presentation-card-action" aria-hidden="true">
+                            View presentation details &rarr;
+                        </span>
+
+                        <a class="presentation-resource"
+                        href="https://pdr24.github.io/AI-See/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                            AI-See
+                        </a>
+
+                        <a class="presentation-resource"
+                        href="https://github.com/pdr24/AI-See"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                            GitHub
+                        </a>
+
+                        <a class="presentation-resource"
+                        href="https://github.com/pdr24/ImageRecognitionEd-SIGCSE2026/blob/main/online%20copy%20IR%20Module%20at%20Summer%20Camp%20SIGCSE26%20Presentation.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                            Slides
+                        </a>
+                    </div>
+
+                </article>
+
+
+                <!-- ================= ITRH - ITiCSE 2025 ================= -->
+                <article class="presentation-card">
+                    <div class="presentation-card-top">
+                        <span class="presentation-chip">K-12 AI Education</span>
+                        <span class="presentation-chip">Interactive Learning Tools</span>
+                    </div>
+                    <h2 class="presentation-card-title">
+                        <a class="presentation-card-main-link" href="presentations/itrh_iticse_2025.html">
+                            IntoTheRabbitHole: A Web Application for Teaching Middle School Students About Search Algorithms
+                        </a>
+                    </h2>
+                    <p class="presentation-card-venue">ACM Innovation and Technology in Computer Science Education (ACM ITiCSE), 2025</p>
+                    <div class="presentation-card-meta">
+                        <p><strong>Authors:</strong> Pragathi Durga Rajarajan, Dr. Fred Martin</p>
+                        <p><strong>University / Group:</strong> University of Texas at San Antonio - Engaging Computing Group</p>
+                    </div>
+                    <div class="presentation-card-footer">
+                        <span class="presentation-card-action" aria-hidden="true">View presentation details &rarr;</span>
+                        <a class="presentation-resource" href="https://pdr24.github.io/IntoTheRabbitHole/" target="_blank" rel="noopener noreferrer">Live Link</a>
+                        <a class="presentation-resource" href="https://github.com/pdr24/IntoTheRabbitHole" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a class="presentation-resource" href="https://github.com/pdr24/IntoTheRabbitHole-ITiCSE2025/blob/main/IntoTheRabbitHole_ITiCSE.pptx" target="_blank" rel="noopener noreferrer">Slides</a>
+                    </div>
+                </article>
+
+
+                <!-- ================= FAUNAFOREST — IEEE ISEC 2025 ================= -->
+                <article class="presentation-card">
+                    <div class="presentation-card-top">
+                        <span class="presentation-chip">K-12 AI Education</span>
+                        <span class="presentation-chip">Interactive Learning Tools</span>
+                    </div>
+                    <h2 class="presentation-card-title">
+                        <a class="presentation-card-main-link" href="presentations/ff_isec_2025.html">
+                            FaunaForest: A Novel Software Tool for Teaching Decision Trees to Middle School Students
+                        </a>
+                    </h2>
+                    <p class="presentation-card-venue">IEEE Integrated STEM Education Conference, 2025</p>
+                    <div class="presentation-card-meta">
+                        <p><strong>Authors:</strong> Pragathi Durga Rajarajan, Adrian Cisneros, Dr. Fred Martin</p>
+                        <p><strong>University / Group:</strong> University of Texas at San Antonio - Engaging Computing Group</p>
+                    </div>
+                    <div class="presentation-card-footer">
+                        <span class="presentation-card-action" aria-hidden="true">View presentation details &rarr;</span>
+                        <a class="presentation-resource" href="https://engaging-computing.github.io/FaunaForest/" target="_blank" rel="noopener noreferrer">Live Link</a>
+                        <a class="presentation-resource" href="https://github.com/engaging-computing/FaunaForest" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a class="presentation-resource" href="https://github.com/pdr24/FaunaForest-ISEC2025/blob/main/FaunaForest%20ISEC%20Presentation%20PDF.pdf" target="_blank" rel="noopener noreferrer">Slides</a>
+                    </div>
+                </article>
+
+            </section>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => { document.getElementById("footer").innerHTML = data; });
+    </script>
+</body>
+</html>

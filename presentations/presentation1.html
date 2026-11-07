@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RuleRunners | Conference Presentation</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div id="header"></div>
+    <script>
+        fetch("../header.html")
+            .then(response => response.text())
+            .then(data => { document.getElementById("header").innerHTML = data; });
+    </script>
+
+    <main class="presentation-detail-page">
+        <div class="presentation-detail-wrap">
+            <a href="presentations.html" class="presentation-back-link">&larr; All Presentations</a>
+
+            <header class="presentation-detail-header">
+                <p class="presentation-eyebrow">Conference Presentation &middot; ACM SIGCSE Virtual 2026</p>
+                <h1 class="presentation-detail-title">
+                    RuleRunners: A Two-Player Collaborative Software Tool for Introducing
+                    Rule-Based AI Systems to Middle School Students
+                </h1>
+                <p class="presentation-authors"><strong>Authors:</strong> [List authors in publication order]</p>
+                <div class="presentation-detail-chips">
+                    <span class="presentation-chip">AI Education</span>
+                    <span class="presentation-chip">Rule-Based AI</span>
+                    <span class="presentation-chip">Collaborative Learning</span>
+                </div>
+            </header>
+
+            <div class="presentation-detail-layout">
+                <div class="presentation-detail-main">
+                    <section class="presentation-detail-section">
+                        <h2>Overview</h2>
+                        <p>
+                            RuleRunners is a two-player collaborative learning tool designed to
+                            introduce middle school students to rule-based artificial intelligence.
+                            Through interactive gameplay, students work with rules and observe how
+                            rule-based systems make decisions, supporting hands-on exploration of
+                            foundational AI concepts.
+                        </p>
+                    </section>
+
+                    <section class="presentation-detail-section">
+                        <h2>About the Presentation</h2>
+                        <p>
+                            This presentation introduces the motivation behind RuleRunners,
+                            explains the learning experience, and walks through the game's levels
+                            to illustrate how students interact with rule-based AI concepts.
+                        </p>
+                        <!-- Add confirmed presentation findings, contributions, or outcomes here. -->
+                    </section>
+
+                    <!-- OPTIONAL MEDIA: Add when you have an image or video thumbnail.
+                    <section class="presentation-detail-section">
+                        <h2>Presentation Preview</h2>
+                        <img class="presentation-preview"
+                             src="assets/images/presentations/rulerunners-preview.png"
+                             alt="Preview of the RuleRunners presentation">
+                    </section>
+                    -->
+                </div>
+
+                <aside class="presentation-detail-sidebar" aria-label="Conference and resource information">
+                    <section class="presentation-info-card">
+                        <h2>Presentation Details</h2>
+                        <dl class="presentation-facts">
+                            <div><dt>Conference</dt><dd>ACM SIGCSE Virtual 2026</dd></div>
+                            <div><dt>Format</dt><dd>Virtual conference presentation</dd></div>
+                            <div><dt>Location</dt><dd>Online</dd></div>
+                            <div><dt>Date</dt><dd>[Exact presentation date]</dd></div>
+                            <div><dt>Presenter(s)</dt><dd>[Presenter name(s)]</dd></div>
+                        </dl>
+                    </section>
+
+                    <section class="presentation-info-card">
+                        <h2>Resources</h2>
+                        <p class="presentation-resource-note">Add each link once the resource is published.</p>
+                        <div class="presentation-resource-list">
+                            <!-- Uncomment and replace paths/URLs with actual available resources.
+                            <a href="assets/presentations/rulerunners-slides.pdf" class="presentation-resource-link"
+                               target="_blank" rel="noopener noreferrer">Presentation Slides &nearr;</a>
+                            <a href="https://github.com/ACCOUNT/REPOSITORY" class="presentation-resource-link"
+                               target="_blank" rel="noopener noreferrer">GitHub Repository &nearr;</a>
+                            <a href="https://example.com/paper" class="presentation-resource-link"
+                               target="_blank" rel="noopener noreferrer">Paper &nearr;</a>
+                            <a href="https://example.com/demo" class="presentation-resource-link"
+                               target="_blank" rel="noopener noreferrer">Live Demo &nearr;</a>
+                            <a href="https://example.com/recording" class="presentation-resource-link"
+                               target="_blank" rel="noopener noreferrer">Recording &nearr;</a>
+                            -->
+                        </div>
+                    </section>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => { document.getElementById("footer").innerHTML = data; });
+    </script>
+</body>
+</html>

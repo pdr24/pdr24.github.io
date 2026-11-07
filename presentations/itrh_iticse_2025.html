@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntoTheRabbitHole | ACM ITiCSE 2025</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+    <div id="header"></div>
+    <script>
+        fetch("../header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+    </script>
+
+    <main class="presentation-detail-page">
+        <div class="presentation-detail-wrap">
+
+            <a href="../presentations.html" class="presentation-back-link">
+                &larr; All Presentations
+            </a>
+
+            <div class="presentation-showcase-grid">
+
+                <!-- =============== TITLE INFORMATION =============== -->
+                <header class="presentation-detail-header presentation-showcase-title">
+
+                    <p class="presentation-eyebrow">
+                        ACM Innovation and Technology in Computer Science Education (ACM ITiCSE), 2025
+                    </p>
+
+                    <h1 class="presentation-detail-title">
+                        IntoTheRabbitHole: A Web Application for Teaching Middle School Students About Search Algorithms
+                    </h1>
+
+                    <p class="presentation-authors">
+                        <strong>Authors:</strong>
+                        Pragathi Durga Rajarajan, Dr. Fred Martin
+                    </p>
+
+                    <p class="presentation-authors">
+                        University of Texas at San Antonio - Engaging Computing Group
+                    </p>
+
+                    <div class="presentation-detail-chips">
+                        <span class="presentation-chip">K-12 AI Education</span>
+                        <span class="presentation-chip">Interactive Learning Tools</span>
+                    </div>
+
+                </header>
+
+                <!-- =============== IMAGE CAROUSEL =============== -->
+                <section class="presentation-carousel-panel"
+                         aria-label="IntoTheRabbitHole Gallery">
+
+                    <div class="presentation-carousel">
+
+                        <div class="presentation-carousel-slides">
+
+                            <!-- Image 1: Replace with actual image path -->
+                            <figure class="presentation-carousel-slide">
+                                <img
+                                    src="../assets/images/paper_thumbnails/ITRH_thumbnail.png"
+                                    alt="IntoTheRabbitHole interactive search algorithm game"
+                                >
+                                <figcaption>IntoTheRabbitHole</figcaption>
+                            </figure>
+
+                            <!-- Add additional images here, if available.
+
+                            <figure class="presentation-carousel-slide">
+                                <img
+                                    src="../assets/images/YOUR_IMAGE.jpg"
+                                    alt="Description of image"
+                                    loading="lazy"
+                                >
+                                <figcaption>Image caption</figcaption>
+                            </figure>
+
+                            -->
+
+                        </div>
+
+                        <!-- Carousel controls -->
+                        <div class="presentation-carousel-controls">
+
+                            <button class="presentation-carousel-btn carousel-prev"
+                                    type="button"
+                                    aria-label="Previous image">
+                                &#10094;
+                            </button>
+
+                            <div class="presentation-carousel-dots"
+                                 aria-label="Image navigation">
+                            </div>
+
+                            <button class="presentation-carousel-btn carousel-next"
+                                    type="button"
+                                    aria-label="Next image">
+                                &#10095;
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- =============== ABOUT =============== -->
+                <section class="presentation-detail-section presentation-showcase-about">
+
+                    <h2>About</h2>
+
+                        <p>
+                            I developed IntoTheRabbitHole, an interactive web application
+                            designed to introduce middle school students (grades 6–8) to
+                            fundamental search algorithms, as part of the Developing AI Tools
+                            for K-12 project at the University of Texas at San Antonio,
+                            under the guidance of Dr. Fred Martin. The project focuses on
+                            making abstract search concepts more accessible through
+                            interactive, puzzle-based learning. This work was published
+                            at the ACM Innovation and Technology in Computer Science
+                            Education (ITiCSE 2025) conference.
+
+                            <br><br>
+
+                            IntoTheRabbitHole features dedicated training puzzles for
+                            depth-first search (DFS) and breadth-first search (BFS), followed
+                            by a timed challenge level. In each puzzle, students navigate
+                            a graph to help a rabbit find its carrot, applying search
+                            strategies to reach the goal. IntoTheRabbitHole is designed
+                            to help students visualize graph traversal, explore how different
+                            search algorithms operate, and develop a more intuitive
+                            understanding of fundamental AI search techniques.
+                        </p>
+
+
+                </section>
+
+                <!-- =============== RESOURCES =============== -->
+                <section class="presentation-info-card presentation-showcase-resources">
+
+                    <h2>IntoTheRabbitHole Resources</h2>
+
+                    <div class="presentation-resource-list">
+
+                        <a class="presentation-resource-link"
+                           href="https://pdr24.github.io/IntoTheRabbitHole/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            IntoTheRabbitHole Live Link &nearr;
+                        </a>
+
+                        <a class="presentation-resource-link"
+                           href="https://github.com/pdr24/IntoTheRabbitHole"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            IntoTheRabbitHole GitHub Repository &nearr;
+                        </a>
+
+                        <a class="presentation-resource-link"
+                           href="https://github.com/pdr24/IntoTheRabbitHole-ITiCSE2025/blob/main/IntoTheRabbitHole_ITiCSE.pptx"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            IntoTheRabbitHole ACM ITiCSE 2025 Presentation Slides &nearr;
+                        </a>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </div>
+    </main>
+
+    <div id="footer"></div>
+    <script>
+        fetch("../footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+
+    <!-- =============== CAROUSEL JAVASCRIPT =============== -->
+    <script>
+        document.querySelectorAll(".presentation-carousel").forEach(carousel => {
+
+            const slides = Array.from(
+                carousel.querySelectorAll(".presentation-carousel-slide")
+            );
+
+            const prevBtn = carousel.querySelector(".carousel-prev");
+            const nextBtn = carousel.querySelector(".carousel-next");
+            const dotsContainer = carousel.querySelector(".presentation-carousel-dots");
+            const controls = carousel.querySelector(".presentation-carousel-controls");
+
+            let currentIndex = 0;
+            const dots = [];
+
+            // Create one navigation dot per image
+            slides.forEach((slide, index) => {
+                const dot = document.createElement("button");
+                dot.type = "button";
+                dot.className = "presentation-carousel-dot";
+                dot.setAttribute("aria-label", `Show image ${index + 1}`);
+
+                dot.addEventListener("click", () => showSlide(index));
+
+                dotsContainer.appendChild(dot);
+                dots.push(dot);
+            });
+
+            function showSlide(index) {
+                if (slides.length === 0) return;
+
+                currentIndex = (index + slides.length) % slides.length;
+
+                slides.forEach((slide, i) => {
+                    slide.hidden = i !== currentIndex;
+                    slide.setAttribute("aria-hidden", String(i !== currentIndex));
+                });
+
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle("active", i === currentIndex);
+                    dot.setAttribute("aria-pressed", String(i === currentIndex));
+                });
+            }
+
+            prevBtn.addEventListener("click", () => showSlide(currentIndex - 1));
+            nextBtn.addEventListener("click", () => showSlide(currentIndex + 1));
+
+            // Hide controls when there is only one image
+            if (slides.length <= 1) {
+                controls.hidden = true;
+            }
+
+            if (slides.length > 0) {
+                showSlide(0);
+            }
+        });
+    </script>
+
+</body>
+</html>
